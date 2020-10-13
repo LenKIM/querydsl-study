@@ -1,3 +1,26 @@
+# Querydsl
+
+[참고 자료]
+
+http://www.querydsl.com/static/querydsl/4.0.1/reference/ko-KR/html_single/#intro
+
+Querydsl 정적 타입을 이용해서 SQL과 같은 쿼리를 생성할 수 있도록 해 주는 프레임워크다. 문자열로 작성하거나 XML 파일에 쿼리를 작성하는 대신, Querydsl이 제공하는 플루언트(Fluent) API를 이용해서 쿼리를 생성할 수 있다.
+
+단순 문자열과 비교해서 Fluent API를 사용할 때의 장점은 다음과 같다.
+
+- IDE의 코드 자동 완성 기능 사용
+
+- 문법적으로 잘못된 쿼리를 허용하지 않음
+
+- 도메인 타입과 프로퍼티를 안전하게 참조할 수 있음
+
+- 도메인 타입의 리팩토링을 더 잘 할 수 있음
+
+
+
+## 1. Querydsl 설정하기
+
+```java
 plugins {
     id 'org.springframework.boot' version '2.3.4.RELEASE'
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
@@ -59,3 +82,6 @@ configurations {
 compileQuerydsl {
     options.annotationProcessorPath = configurations.querydsl
 }
+// 
+```
+
