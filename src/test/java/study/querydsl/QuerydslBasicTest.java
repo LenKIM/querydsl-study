@@ -932,6 +932,4 @@ public class QuerydslBasicTest {
             System.out.println("S => " + s);
         }
     }
-
-
 }
